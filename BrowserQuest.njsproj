@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{f263a3ec-5028-4c5e-b3ff-dfaba716b6f9}</ProjectGuid>
+        <ProjectHome />
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile>server.js</StartupFile>
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="package.json" />
+        <Content Include="README.md" />
+        <Compile Include="server.js" />
+        <Content Include=".git\ms-persist.xml" />
+        <Compile Include="bin\r.js" />
+        <Compile Include="bin\start_dev_client.js" />
+        <Content Include="client\index.html" />
+        <Content Include="client\README.md" />
+        <Content Include="server\config.json" />
+        <Content Include="server\README.md" />
+        <Content Include="tools\sha1_encode.html" />
+        <Content Include="client\css\achievements.css" />
+        <Content Include="client\css\ie.css" />
+        <Content Include="client\css\main.css" />
+        <Content Include="client\fonts\advocut-webfont.svg" />
+        <Content Include="client\fonts\graphicpixel-webfont.svg" />
+        <Content Include="client\js\README.md" />
+        <Compile Include="client\js\animation.js" />
+        <Compile Include="client\js\app.js" />
+        <Compile Include="client\js\area.js" />
+        <Compile Include="client\js\audio.js" />
+        <Compile Include="client\js\bubble.js" />
+        <Compile Include="client\js\build.js" />
+        <Compile Include="client\js\camera.js" />
+        <Compile Include="client\js\character.js" />
+        <Compile Include="client\js\chest.js" />
+        <Compile Include="client\js\config.js" />
+        <Compile Include="client\js\detect.js" />
+        <Compile Include="client\js\entity.js" />
+        <Compile Include="client\js\entityfactory.js" />
+        <Compile Include="client\js\entrypoint.js" />
+        <Compile Include="client\js\exceptions.js" />
+        <Compile Include="client\js\game.js" />
+        <Compile Include="client\js\gameclient.js" />
+        <Compile Include="client\js\guild.js" />
+        <Compile Include="client\js\home.js" />
+        <Compile Include="client\js\infomanager.js" />
+        <Compile Include="client\js\item.js" />
+        <Compile Include="client\js\items.js" />
+        <Compile Include="client\js\main.js" />
+        <Compile Include="client\js\map.js" />
+        <Compile Include="client\js\mapworker.js" />
+        <Compile Include="client\js\mob.js" />
+        <Compile Include="client\js\mobs.js" />
+        <Compile Include="client\js\npc.js" />
+        <Compile Include="client\js\npcs.js" />
+        <Compile Include="client\js\pathfinder.js" />
+        <Compile Include="client\js\player.js" />
+        <Compile Include="client\js\renderer.js" />
+        <Compile Include="client\js\sprite.js" />
+        <Compile Include="client\js\sprites.js" />
+        <Compile Include="client\js\storage.js" />
+        <Compile Include="client\js\text.js" />
+        <Compile Include="client\js\tile.js" />
+        <Compile Include="client\js\timer.js" />
+        <Compile Include="client\js\transition.js" />
+        <Compile Include="client\js\updater.js" />
+        <Compile Include="client\js\util.js" />
+        <Compile Include="client\js\warrior.js" />
+        <Content Include="client\maps\world_client.json" />
+        <Compile Include="client\maps\world_client.js" />
+        <Content Include="client\sprites\agent.json" />
+        <Content Include="client\sprites\arrow.json" />
+        <Content Include="client\sprites\axe.json" />
+        <Content Include="client\sprites\bat.json" />
+        <Content Include="client\sprites\beachnpc.json" />
+        <Content Include="client\sprites\bluesword.json" />
+        <Content Include="client\sprites\boss.json" />
+        <Content Include="client\sprites\chest.json" />
+        <Content Include="client\sprites\clotharmor.json" />
+        <Content Include="client\sprites\coder.json" />
+        <Content Include="client\sprites\crab.json" />
+        <Content Include="client\sprites\death.json" />
+        <Content Include="client\sprites\deathknight.json" />
+        <Content Include="client\sprites\desertnpc.json" />
+        <Content Include="client\sprites\eye.json" />
+        <Content Include="client\sprites\firefox.json" />
+        <Content Include="client\sprites\forestnpc.json" />
+        <Content Include="client\sprites\goblin.json" />
+        <Content Include="client\sprites\goldenarmor.json" />
+        <Content Include="client\sprites\goldensword.json" />
+        <Content Include="client\sprites\guard.json" />
+        <Content Include="client\sprites\hand.json" />
+        <Content Include="client\sprites\impact.json" />
+        <Content Include="client\sprites\item-axe.json" />
+        <Content Include="client\sprites\item-bluesword.json" />
+        <Content Include="client\sprites\item-burger.json" />
+        <Content Include="client\sprites\item-cake.json" />
+        <Content Include="client\sprites\item-clotharmor.json" />
+        <Content Include="client\sprites\item-firepotion.json" />
+        <Content Include="client\sprites\item-flask.json" />
+        <Content Include="client\sprites\item-goldenarmor.json" />
+        <Content Include="client\sprites\item-goldensword.json" />
+        <Content Include="client\sprites\item-leatherarmor.json" />
+        <Content Include="client\sprites\item-mailarmor.json" />
+        <Content Include="client\sprites\item-morningstar.json" />
+        <Content Include="client\sprites\item-platearmor.json" />
+        <Content Include="client\sprites\item-redarmor.json" />
+        <Content Include="client\sprites\item-redsword.json" />
+        <Content Include="client\sprites\item-sword1.json" />
+        <Content Include="client\sprites\item-sword2.json" />
+        <Content Include="client\sprites\king.json" />
+        <Content Include="client\sprites\lavanpc.json" />
+        <Content Include="client\sprites\leatherarmor.json" />
+        <Content Include="client\sprites\loot.json" />
+        <Content Include="client\sprites\mailarmor.json" />
+        <Content Include="client\sprites\morningstar.json" />
+        <Content Include="client\sprites\nyan.json" />
+        <Content Include="client\sprites\octocat.json" />
+        <Content Include="client\sprites\ogre.json" />
+        <Content Include="client\sprites\platearmor.json" />
+        <Content Include="client\sprites\priest.json" />
+        <Content Include="client\sprites\rat.json" />
+        <Content Include="client\sprites\redarmor.json" />
+        <Content Include="client\sprites\redsword.json" />
+        <Content Include="client\sprites\rick.json" />
+        <Content Include="client\sprites\scientist.json" />
+        <Content Include="client\sprites\shadow16.json" />
+        <Content Include="client\sprites\skeleton.json" />
+        <Content Include="client\sprites\skeleton2.json" />
+        <Content Include="client\sprites\snake.json" />
+        <Content Include="client\sprites\sorcerer.json" />
+        <Content Include="client\sprites\sparks.json" />
+        <Content Include="client\sprites\spectre.json" />
+        <Content Include="client\sprites\sword.json" />
+        <Content Include="client\sprites\sword1.json" />
+        <Content Include="client\sprites\sword2.json" />
+        <Content Include="client\sprites\talk.json" />
+        <Content Include="client\sprites\target.json" />
+        <Content Include="client\sprites\villagegirl.json" />
+        <Content Include="client\sprites\villager.json" />
+        <Content Include="client\sprites\wizard.json" />
+        <Compile Include="client\test\area.js" />
+        <Compile Include="client\test\chest.js" />
+        <Compile Include="client\test\exceptions.js" />
+        <Compile Include="client\test\item.js" />
+        <Content Include="client\audio\music\README.md" />
+        <Content Include="client\img\1\achievements.png" />
+        <Content Include="client\img\1\agent.png" />
+        <Content Include="client\img\1\axe.png" />
+        <Content Include="client\img\1\barsheet.png" />
+        <Content Include="client\img\1\bat.png" />
+        <Content Include="client\img\1\beachnpc.png" />
+        <Content Include="client\img\1\bluesword.png" />
+        <Content Include="client\img\1\border.png" />
+        <Content Include="client\img\1\boss.png" />
+        <Content Include="client\img\1\chest.png" />
+        <Content Include="client\img\1\clotharmor.png" />
+        <Content Include="client\img\1\coder.png" />
+        <Content Include="client\img\1\crab.png" />
+        <Content Include="client\img\1\death.png" />
+        <Content Include="client\img\1\deathknight.png" />
+        <Content Include="client\img\1\desertnpc.png" />
+        <Content Include="client\img\1\eye.png" />
+        <Content Include="client\img\1\firefox.png" />
+        <Content Include="client\img\1\forestnpc.png" />
+        <Content Include="client\img\1\goblin.png" />
+        <Content Include="client\img\1\goldenarmor.png" />
+        <Content Include="client\img\1\goldensword.png" />
+        <Content Include="client\img\1\guard.png" />
+        <Content Include="client\img\1\hand.png" />
+        <Content Include="client\img\1\item-axe.png" />
+        <Content Include="client\img\1\item-bluesword.png" />
+        <Content Include="client\img\1\item-burger.png" />
+        <Content Include="client\img\1\item-cake.png" />
+        <Content Include="client\img\1\item-clotharmor.png" />
+        <Content Include="client\img\1\item-firepotion.png" />
+        <Content Include="client\img\1\item-flask.png" />
+        <Content Include="client\img\1\item-goldenarmor.png" />
+        <Content Include="client\img\1\item-goldensword.png" />
+        <Content Include="client\img\1\item-leatherarmor.png" />
+        <Content Include="client\img\1\item-mailarmor.png" />
+        <Content Include="client\img\1\item-morningstar.png" />
+        <Content Include="client\img\1\item-platearmor.png" />
+        <Content Include="client\img\1\item-redarmor.png" />
+        <Content Include="client\img\1\item-redsword.png" />
+        <Content Include="client\img\1\item-sword1.png" />
+        <Content Include="client\img\1\item-sword2.png" />
+        <Content Include="client\img\1\king.png" />
+        <Content Include="client\img\1\lavanpc.png" />
+        <Content Include="client\img\1\leatherarmor.png" />
+        <Content Include="client\img\1\loot.png" />
+        <Content Include="client\img\1\mailarmor.png" />
+        <Content Include="client\img\1\morningstar.png" />
+        <Content Include="client\img\1\nyan.png" />
+        <Content Include="client\img\1\octocat.png" />
+        <Content Include="client\img\1\ogre.png" />
+        <Content Include="client\img\1\platearmor.png" />
+        <Content Include="client\img\1\priest.png" />
+        <Content Include="client\img\1\rat.png" />
+        <Content Include="client\img\1\redarmor.png" />
+        <Content Include="client\img\1\redsword.png" />
+        <Content Include="client\img\1\rick.png" />
+        <Content Include="client\img\1\scientist.png" />
+        <Content Include="client\img\1\shadow16.png" />
+        <Content Include="client\img\1\skeleton.png" />
+        <Content Include="client\img\1\skeleton2.png" />
+        <Content Include="client\img\1\snake.png" />
+        <Content Include="client\img\1\sorcerer.png" />
+        <Content Include="client\img\1\sparks.png" />
+        <Content Include="client\img\1\spectre.png" />
+        <Content Include="client\img\1\spritesheet.png" />
+        <Content Include="client\img\1\sword.png" />
+        <Content Include="client\img\1\sword1.png" />
+        <Content Include="client\img\1\sword2.png" />
+        <Content Include="client\img\1\talk.png" />
+        <Content Include="client\img\1\target.png" />
+        <Content Include="client\img\1\tilesheet.png" />
+        <Content Include="client\img\1\villagegirl.png" />
+        <Content Include="client\img\1\villager.png" />
+        <Content Include="client\img\1\wizard.png" />
+        <Content Include="client\img\1\wood.png" />
+        <Content Include="client\img\1\wood2.png" />
+        <Content Include="client\img\1\wood3.png" />
+        <Content Include="client\img\2\achievements.png" />
+        <Content Include="client\img\2\agent.png" />
+        <Content Include="client\img\2\axe.png" />
+        <Content Include="client\img\2\barsheet.png" />
+        <Content Include="client\img\2\bat.png" />
+        <Content Include="client\img\2\beachnpc.png" />
+        <Content Include="client\img\2\bluesword.png" />
+        <Content Include="client\img\2\border.png" />
+        <Content Include="client\img\2\boss.png" />
+        <Content Include="client\img\2\chest.png" />
+        <Content Include="client\img\2\clotharmor.png" />
+        <Content Include="client\img\2\coder.png" />
+        <Content Include="client\img\2\crab.png" />
+        <Content Include="client\img\2\death.png" />
+        <Content Include="client\img\2\deathknight.png" />
+        <Content Include="client\img\2\desertnpc.png" />
+        <Content Include="client\img\2\eye.png" />
+        <Content Include="client\img\2\firefox.png" />
+        <Content Include="client\img\2\forestnpc.png" />
+        <Content Include="client\img\2\goblin.png" />
+        <Content Include="client\img\2\goldenarmor.png" />
+        <Content Include="client\img\2\goldensword.png" />
+        <Content Include="client\img\2\guard.png" />
+        <Content Include="client\img\2\hand.png" />
+        <Content Include="client\img\2\item-axe.png" />
+        <Content Include="client\img\2\item-bluesword.png" />
+        <Content Include="client\img\2\item-burger.png" />
+        <Content Include="client\img\2\item-cake.png" />
+        <Content Include="client\img\2\item-clotharmor.png" />
+        <Content Include="client\img\2\item-firepotion.png" />
+        <Content Include="client\img\2\item-flask.png" />
+        <Content Include="client\img\2\item-goldenarmor.png" />
+        <Content Include="client\img\2\item-goldensword.png" />
+        <Content Include="client\img\2\item-leatherarmor.png" />
+        <Content Include="client\img\2\item-mailarmor.png" />
+        <Content Include="client\img\2\item-morningstar.png" />
+        <Content Include="client\img\2\item-platearmor.png" />
+        <Content Include="client\img\2\item-redarmor.png" />
+        <Content Include="client\img\2\item-redsword.png" />
+        <Content Include="client\img\2\item-sword1.png" />
+        <Content Include="client\img\2\item-sword2.png" />
+        <Content Include="client\img\2\king.png" />
+        <Content Include="client\img\2\lavanpc.png" />
+        <Content Include="client\img\2\leatherarmor.png" />
+        <Content Include="client\img\2\loot.png" />
+        <Content Include="client\img\2\mailarmor.png" />
+        <Content Include="client\img\2\morningstar.png" />
+        <Content Include="client\img\2\nyan.png" />
+        <Content Include="client\img\2\octocat.png" />
+        <Content Include="client\img\2\ogre.png" />
+        <Content Include="client\img\2\platearmor.png" />
+        <Content Include="client\img\2\priest.png" />
+        <Content Include="client\img\2\rat.png" />
+        <Content Include="client\img\2\redarmor.png" />
+        <Content Include="client\img\2\redsword.png" />
+        <Content Include="client\img\2\rick.png" />
+        <Content Include="client\img\2\scientist.png" />
+        <Content Include="client\img\2\shadow16.png" />
+        <Content Include="client\img\2\skeleton.png" />
+        <Content Include="client\img\2\skeleton2.png" />
+        <Content Include="client\img\2\snake.png" />
+        <Content Include="client\img\2\sorcerer.png" />
+        <Content Include="client\img\2\sparks.png" />
+        <Content Include="client\img\2\spectre.png" />
+        <Content Include="client\img\2\spritesheet.png" />
+        <Content Include="client\img\2\sword.png" />
+        <Content Include="client\img\2\sword1.png" />
+        <Content Include="client\img\2\sword2.png" />
+        <Content Include="client\img\2\talk.png" />
+        <Content Include="client\img\2\target.png" />
+        <Content Include="client\img\2\tilesheet.png" />
+        <Content Include="client\img\2\villagegirl.png" />
+        <Content Include="client\img\2\villager.png" />
+        <Content Include="client\img\2\wizard.png" />
+        <Content Include="client\img\2\wood.png" />
+        <Content Include="client\img\2\wood2.png" />
+        <Content Include="client\img\2\wood3.png" />
+        <Content Include="client\img\3\achievements.png" />
+        <Content Include="client\img\3\agent.png" />
+        <Content Include="client\img\3\axe.png" />
+        <Content Include="client\img\3\barsheet.png" />
+        <Content Include="client\img\3\bat.png" />
+        <Content Include="client\img\3\beachnpc.png" />
+        <Content Include="client\img\3\bluesword.png" />
+        <Content Include="client\img\3\border.png" />
+        <Content Include="client\img\3\boss.png" />
+        <Content Include="client\img\3\chest.png" />
+        <Content Include="client\img\3\clotharmor.png" />
+        <Content Include="client\img\3\coder.png" />
+        <Content Include="client\img\3\crab.png" />
+        <Content Include="client\img\3\death.png" />
+        <Content Include="client\img\3\deathknight.png" />
+        <Content Include="client\img\3\desertnpc.png" />
+        <Content Include="client\img\3\eye.png" />
+        <Content Include="client\img\3\firefox.png" />
+        <Content Include="client\img\3\forestnpc.png" />
+        <Content Include="client\img\3\goblin.png" />
+        <Content Include="client\img\3\goldenarmor.png" />
+        <Content Include="client\img\3\goldensword.png" />
+        <Content Include="client\img\3\guard.png" />
+        <Content Include="client\img\3\hand.png" />
+        <Content Include="client\img\3\item-axe.png" />
+        <Content Include="client\img\3\item-bluesword.png" />
+        <Content Include="client\img\3\item-burger.png" />
+        <Content Include="client\img\3\item-cake.png" />
+        <Content Include="client\img\3\item-clotharmor.png" />
+        <Content Include="client\img\3\item-firepotion.png" />
+        <Content Include="client\img\3\item-flask.png" />
+        <Content Include="client\img\3\item-goldenarmor.png" />
+        <Content Include="client\img\3\item-goldensword.png" />
+        <Content Include="client\img\3\item-leatherarmor.png" />
+        <Content Include="client\img\3\item-mailarmor.png" />
+        <Content Include="client\img\3\item-morningstar.png" />
+        <Content Include="client\img\3\item-platearmor.png" />
+        <Content Include="client\img\3\item-redarmor.png" />
+        <Content Include="client\img\3\item-redsword.png" />
+        <Content Include="client\img\3\item-sword1.png" />
+        <Content Include="client\img\3\item-sword2.png" />
+        <Content Include="client\img\3\king.png" />
+        <Content Include="client\img\3\lavanpc.png" />
+        <Content Include="client\img\3\leatherarmor.png" />
+        <Content Include="client\img\3\loot.png" />
+        <Content Include="client\img\3\mailarmor.png" />
+        <Content Include="client\img\3\morningstar.png" />
+        <Content Include="client\img\3\nyan.png" />
+        <Content Include="client\img\3\octocat.png" />
+        <Content Include="client\img\3\ogre.png" />
+        <Content Include="client\img\3\platearmor.png" />
+        <Content Include="client\img\3\priest.png" />
+        <Content Include="client\img\3\rat.png" />
+        <Content Include="client\img\3\redarmor.png" />
+        <Content Include="client\img\3\redsword.png" />
+        <Content Include="client\img\3\rick.png" />
+        <Content Include="client\img\3\scientist.png" />
+        <Content Include="client\img\3\shadow16.png" />
+        <Content Include="client\img\3\skeleton.png" />
+        <Content Include="client\img\3\skeleton2.png" />
+        <Content Include="client\img\3\snake.png" />
+        <Content Include="client\img\3\sorcerer.png" />
+        <Content Include="client\img\3\sparks.png" />
+        <Content Include="client\img\3\spectre.png" />
+        <Content Include="client\img\3\spritesheet.png" />
+        <Content Include="client\img\3\sword.png" />
+        <Content Include="client\img\3\sword1.png" />
+        <Content Include="client\img\3\sword2.png" />
+        <Content Include="client\img\3\talk.png" />
+        <Content Include="client\img\3\target.png" />
+        <Content Include="client\img\3\tilesheet.png" />
+        <Content Include="client\img\3\villagegirl.png" />
+        <Content Include="client\img\3\villager.png" />
+        <Content Include="client\img\3\wizard.png" />
+        <Content Include="client\img\3\wood.png" />
+        <Content Include="client\img\3\wood2.png" />
+        <Content Include="client\img\3\wood3.png" />
+        <Content Include="client\img\common\apple-touch-icon-114x114.png" />
+        <Content Include="client\img\common\apple-touch-icon-144x144.png" />
+        <Content Include="client\img\common\apple-touch-icon-57x57.png" />
+        <Content Include="client\img\common\apple-touch-icon-72x72.png" />
+        <Content Include="client\img\common\apple-touch-startup-image-1496x2048.png" />
+        <Content Include="client\img\common\apple-touch-startup-image-1536x2008.png" />
+        <Content Include="client\img\common\apple-touch-startup-image-320x460.png" />
+        <Content Include="client\img\common\apple-touch-startup-image-640x920.png" />
+        <Content Include="client\img\common\apple-touch-startup-image-748x1024.png" />
+        <Content Include="client\img\common\apple-touch-startup-image-768x1004.png" />
+        <Content Include="client\img\common\arrow.png" />
+        <Content Include="client\img\common\favicon.png" />
+        <Content Include="client\img\common\loading-error.png" />
+        <Content Include="client\img\common\loading.png" />
+        <Content Include="client\img\common\thingy.png" />
+        <Content Include="client\img\common\promo-title.jpg" />
+        <Content Include="client\img\common\screenshot.jpg" />
+        <Content Include="client\img\common\spinner.gif" />
+        <Content Include="client\img\common\spinner2.gif" />
+        <Compile Include="client\js\lib\astar.js" />
+        <Compile Include="client\js\lib\bison.js" />
+        <Compile Include="client\js\lib\class.js" />
+        <Compile Include="client\js\lib\css3-mediaqueries.js" />
+        <Compile Include="client\js\lib\log.js" />
+        <Compile Include="client\js\lib\modernizr.js" />
+        <Compile Include="client\js\lib\require-jquery.js" />
+        <Compile Include="client\js\lib\sha1.js" />
+        <Compile Include="client\js\lib\stacktrace.js" />
+        <Compile Include="client\js\lib\underscore.min.js" />
+        <Content Include="server\js\README.md" />
+        <Compile Include="server\js\area.js" />
+        <Compile Include="server\js\character.js" />
+        <Compile Include="server\js\checkpoint.js" />
+        <Compile Include="server\js\chest.js" />
+        <Compile Include="server\js\chestarea.js" />
+        <Compile Include="server\js\databaseselector.js" />
+        <Compile Include="server\js\entity.js" />
+        <Compile Include="server\js\format.js" />
+        <Compile Include="server\js\formulas.js" />
+        <Compile Include="server\js\guild.js" />
+        <Compile Include="server\js\item.js" />
+        <Compile Include="server\js\main.js" />
+        <Compile Include="server\js\map.js" />
+        <Compile Include="server\js\message.js" />
+        <Compile Include="server\js\metrics.js" />
+        <Compile Include="server\js\mob.js" />
+        <Compile Include="server\js\mobarea.js" />
+        <Compile Include="server\js\npc.js" />
+        <Compile Include="server\js\player.js" />
+        <Compile Include="server\js\productionconfig.js" />
+        <Compile Include="server\js\properties.js" />
+        <Compile Include="server\js\utils.js" />
+        <Compile Include="server\js\worldserver.js" />
+        <Compile Include="server\js\ws.js" />
+        <Content Include="server\maps\world_server.json" />
+        <Compile Include="server\production_hosts\heroku.js" />
+        <Compile Include="server\production_hosts\openshift.js" />
+        <Compile Include="server\js\db_providers\redis.js" />
+        <Compile Include="server\js\lib\class.js" />
+        <Compile Include="shared\js\boilerplate.js" />
+        <Compile Include="shared\js\file.js" />
+        <Compile Include="shared\js\gametypes.js" />
+        <Compile Include="shared\js\test_boilerplate.js" />
+        <Content Include="tools\maps\README.md" />
+        <Compile Include="tools\maps\exportmap.js" />
+        <Compile Include="tools\maps\pre_processmap.js" />
+        <Compile Include="tools\maps\processmap.js" />
+        <Content Include="tools\maps\tmx\mobset.png" />
+        <Content Include="tools\maps\tmx\map.json" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include=".git" />
+        <Folder Include="bin" />
+        <Folder Include="client" />
+        <Folder Include="client\audio\music" />
+        <Folder Include="client\css" />
+        <Folder Include="client\fonts" />
+        <Folder Include="client\img\1" />
+        <Folder Include="client\img\2" />
+        <Folder Include="client\img\3" />
+        <Folder Include="client\img\common" />
+        <Folder Include="client\js" />
+        <Folder Include="client\js\lib" />
+        <Folder Include="client\maps" />
+        <Folder Include="client\sprites" />
+        <Folder Include="client\test" />
+        <Folder Include="server" />
+        <Folder Include="server\js" />
+        <Folder Include="server\js\db_providers" />
+        <Folder Include="server\js\lib" />
+        <Folder Include="server\maps" />
+        <Folder Include="server\production_hosts" />
+        <Folder Include="shared\js" />
+        <Folder Include="tools" />
+        <Folder Include="tools\maps" />
+        <Folder Include="tools\maps\tmx" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
